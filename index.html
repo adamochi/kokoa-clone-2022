@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Time to Practice!</title>
 </head>
 <body>
-    
+    <div id="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+            <!-- lightning icon -->
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
+<!-- 
+
+It's about understanding, not remembering
+
+a long class name because things like column is so common you don't know which one... so status_bar__column which includes father and child is much better
+
+___________________________________________________
+can just use classes for everything instead of keep checking if something is a #class or and .id
+https://css-tricks.com/bem-101/
+
+block component
+.btn {}
+
+Element that depends upon the block
+.btn__price {}
+
+Modifier that changes the style of the block
+.btn--orange {}
+,btn--big {}
+
+^^ used to use this but hard to understand why for beginners because they haven't "suffered" yet to know they need this
+so instead use like this>>>>
+<a class="btn btn--big btn--orange" href="https://css-tricks.com">
+    <span class="btn__price">$9.99</span>
+    <span class="btn__text">Subscribe</span>
+</a>
+
+This makes reading the code way easier
+
+___________________________________________________
+
+
+ -->
