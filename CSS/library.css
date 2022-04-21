@@ -55,4 +55,12 @@
 .book_of_the_day {
   font-size: xx-large;
 }
-
+.book_of_the_day {
+  margin: 30px 20px;
+}
+.of_the_day_cover {
+  height: 150px;
+  width: 50px;
+  border-radius: 15px
+   
+}
