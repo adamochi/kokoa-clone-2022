@@ -1,0 +1,58 @@
+@import "reset.css";
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    background-color: whitesmoke;
+  }
+
+
+  .fa-2x {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: gold;
+  }  
+  .fa-bars:hover, .fa-basket-shopping:hover, .fa-search:hover {
+    transform: scale(120%);
+    transition: transform 0.02s;
+  }
+
+  .search {
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .search_bar {
+    background-color: white;
+    border: 0px solid;
+    border-color: whitesmoke;
+    border-radius: 250px;
+    border-bottom-width: 5px;
+    border-bottom-color: rgb(228, 228, 228);
+    border-bottom-style: inset;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative
+  }
+  input {
+    display: flex;
+    height: 90%;
+  }
+.fa-search {
+  margin-left: 20px;
+}
+.book_of_the_day {
+  font-size: xx-large;
+}
+
