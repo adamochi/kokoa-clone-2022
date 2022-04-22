@@ -5,12 +5,14 @@
 @import "status_bar.css";
 @import "nav-bar.css";
 @import "screen-header.css";
+@import "user-component.css";
 /* Screens */
 @import "login.css";
 @import "friends.css";
 
 
 body {
+    color: rgb(56, 56, 56);
     font-family: 'Open Sans', sans-serif;
     height: 200vh;
 }
