@@ -6,6 +6,7 @@
 @import "nav-bar.css";
 @import "screen-header.css";
 @import "user-component.css";
+@import "badge.css";
 /* Screens */
 @import "login.css";
 @import "friends.css";
@@ -14,10 +15,14 @@
 body {
     color: rgb(56, 56, 56);
     font-family: 'Open Sans', sans-serif;
-    height: 200vh;
+    height: 100vh;
 }
 .status-bar {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
 }
