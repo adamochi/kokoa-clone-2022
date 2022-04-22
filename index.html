@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Kokoa Clone</title>
 </head>
@@ -30,14 +30,16 @@
             If you have a Kokoa Account, log in with your email or phone number.
         </p>
     </header>
+<!-- action sends to another form, method can be 2 things: post sends to a server on the backend. 2 is get, it is insecure. should be only things you will see on the url. not usernames and passwords 
 
-    <form action="">
-        <input type="text" placeholder="Email or Phone Number">
-        <input type="password" placeholder="Password">
+post methods won't work on the place we are going to upload, only get-->
+    <form action="friends.html" method="" id="login-form">
+        <input name="username" type="text" placeholder="Email or Phone Number">
+        <input name="password" type="password" placeholder="Password">
         <input type="submit" value="Log In">
+        <a href="#">Find kokoa Account or Password</a>
     </form>
 
-    <a href="#">Find kokoa Account or Password</a>
 
 
 
@@ -77,4 +79,12 @@ ___________________________________________________
 
 We knew we were going to have a few headers so we made classes, but for form, we are only going to have one so it's simple
 
+
+
+
+When you add padding to a box, css tries to help you because the padding leaves less space for the content that is inside so it makes the box bigger
+example: You made 200px wide box then added 50px padding leaves 150 pixel width for the content. SO it adds 50px that you asked for to the box, essentially making it a 250 width
+but now you have a bigger box........
+
+WHEN I SAY box-padding: border-box; IT DOESN'T MODIFY THE TOTAL SIZE.
  -->

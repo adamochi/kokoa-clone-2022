@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+@import "variables.css";
+/* Components */
+@import "status_bar.css";
+@import "nav-bar.css";
+/* Screens */
+@import "login.css";
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 200vh;
+}
+.status-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
