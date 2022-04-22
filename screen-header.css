@@ -1,0 +1,15 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+}
+.header__title_friends {
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+.header__icons span{
+    margin-left: 25px;
+}
