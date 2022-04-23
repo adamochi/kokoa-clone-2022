@@ -10,6 +10,7 @@
 /* Screens */
 @import "login.css";
 @import "friends.css";
+@import "find.css";
 
 
 body {
