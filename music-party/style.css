@@ -8,9 +8,9 @@ body {
 }
 .bigbox {
     justify-self: center;
-    height: 100vh;
+    height: 860px;
     width: 100%;
-    background-color: rgba(121, 103, 235, 0.226);
+    background-color: rgba(105, 82, 252, 0.363);
     border-radius: 50px;
 }
 
@@ -61,7 +61,10 @@ body {
 .shuffle {
     display: flex;
     justify-content: center;
-    margin: 60px 40px 010px 40px;
+    margin: 60px 40px 40px 40px;
+}
+.shuffle__btn span {
+    font-weight: 600;
 }
 .shuffle__btn {
     padding: 20px;
@@ -72,6 +75,11 @@ body {
     margin: 0px 10px;
     text-align: center;
 }
+
+.shuffle:hover span {
+    transform: scale(150%);
+    transition: font-size 0.5s;
+}
 .shuffle_like-btn {
     padding: 20px;
     width: 100px;
@@ -81,10 +89,13 @@ body {
     margin: 0px 10px;
     color: rgba(0, 0, 0, 0.5);
 }
+.shuffle_like-btn i {
+    color: rgba(0, 0, 0, 0.8);
+}
 .shuffle_like-btn:hover i {
     color: rgba(0, 0, 0, 0.8);
-    transform: scale(150%);
-    transition: transform 0.5s;
+    transform: scale(120%);
+    transition: transform 0.3s;
 }
 .songs {
     display: flex;
@@ -100,9 +111,9 @@ body {
     align-items: center;
 }
 .user-component__avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
     margin-right: 20px;
 }
 .user-component__title {
@@ -114,22 +125,17 @@ body {
     color: rgba(0, 0, 0, 0.6);
     font-size: 18px;
 }
-.user-component__avatar--xl {
-    width: 80px;
-    height: 80px;
-}
-.user-component__avatar--sm {
-    width: 60px;
-    height: 60px;
-}
+
 .user-component__title--not-bold {
     font-weight: 500;
 }
-  .user-component__column {
+  .user-component__column span{
       color: rgba(0, 0, 0, 0.5);
+      margin-right: 10px;
+      padding-top: 8px;
   }
-  .user-component__column span {
-      margin-right: 3px;
+  .user-component__column i {
+      margin-right: 20px;
   }
   .user-component__time {
       margin-bottom: 10px;
@@ -143,4 +149,11 @@ body {
   }
   .main-screen {
       padding: 10px 40px;
+  }
+  .now-playing {
+      margin: 20px;
+      background-color: darkslateblue;
+      padding: 15px 40px;
+      color: aliceblue;
+      border-radius: 40px;
   }
