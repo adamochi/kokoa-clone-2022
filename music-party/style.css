@@ -26,12 +26,13 @@ body {
     margin-left: 25px;
 }
 .artist-top img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: #fff;
 
-    box-shadow: 0px 0px 40px 20px #0ff;
+    box-shadow: 0px 0px 40px 10px #0ff;
+    
 
 }
 .artist-top {
@@ -48,8 +49,20 @@ body {
     margin-top: 40px;
     text-align: center;
 }
+.coder-name_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
 .coder-name__main {
     font-size: 40px;
+}
+.coder-name__main__two {
+    font-size: 30px;
+    font-weight: 600;
 }
 .coder-name__genre {
     color: rgba(0, 0, 0, 0.5);
@@ -157,3 +170,28 @@ body {
       color: aliceblue;
       border-radius: 40px;
   }
+
+  .playlist img {
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px 10px #0ff;
+}
+.playlist {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.now-playing_two {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.fa-play-circle {
+    transform: scale(500%);
+}
+.controls__column span {
+    padding: 40px;
+}
