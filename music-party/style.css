@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+.bigbox {
+    justify-self: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(121, 103, 235, 0.226);
+    border-radius: 50px;
+}
+
+
+.screen-top__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+    padding: 30px 20px;
+}
+.header__icons span{
+    margin-left: 25px;
+}
+.artist-top img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    box-shadow: 0px 0px 40px 20px #0ff;
+
+}
+.artist-top {
+    display: flex;
+    justify-content: center;
+}
+.fa-arrow-left:hover, .fa-search:hover {
+    transform: scale(120%);
+}
+.coder-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+}
+.coder-name__main {
+    font-size: 40px;
+}
+.coder-name__genre {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+    text-align: center;
+}
+.shuffle {
+    display: flex;
+    justify-content: center;
+    margin: 60px 40px 010px 40px;
+}
+.shuffle__btn {
+    padding: 20px;
+    width: 100px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 40px;
+    margin: 0px 10px;
+    text-align: center;
+}
+.shuffle_like-btn {
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 40px;
+    margin: 0px 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.shuffle_like-btn:hover i {
+    color: rgba(0, 0, 0, 0.8);
+    transform: scale(150%);
+    transition: transform 0.5s;
+}
