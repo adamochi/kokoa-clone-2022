@@ -86,3 +86,61 @@ body {
     transform: scale(150%);
     transition: transform 0.5s;
 }
+.songs {
+    display: flex;
+
+}
+.user-component {
+    justify-content: space-between;
+}
+
+
+.user-component, .user-component__column {
+    display: flex;
+    align-items: center;
+}
+.user-component__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.user-component__title {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.user-component__subtitle {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+.user-component__avatar--xl {
+    width: 80px;
+    height: 80px;
+}
+.user-component__avatar--sm {
+    width: 60px;
+    height: 60px;
+}
+.user-component__title--not-bold {
+    font-weight: 500;
+}
+  .user-component__column {
+      color: rgba(0, 0, 0, 0.5);
+  }
+  .user-component__column span {
+      margin-right: 3px;
+  }
+  .user-component__time {
+      margin-bottom: 10px;
+      display: block;
+  }
+  .user-component__column:last-child {
+      color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .main-screen {
+      padding: 10px 40px;
+  }
