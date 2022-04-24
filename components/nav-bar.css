@@ -18,6 +18,18 @@
     position: relative;
     color: rgb(56, 56, 56);
 }
+
+@keyframes notificationAnimation {
+    0% {
+        transform: nome;
+    }
+    50% {
+        transform: translateY(-5px) rotateY(360deg) ;
+    }
+    100% {
+        transform: none;
+    }
+}
 .nav__notification {
     background-color: orangered;
     width: 26px;
@@ -31,6 +43,7 @@
     position: absolute;
     left: 18px;
     bottom: 18px;
+    animation: notificationAnimation 2s ease-in-out infinite;
 }
 .nav__btn {
     position: relative;    
@@ -43,4 +56,28 @@
     position: absolute;
     left: 32px;
     bottom: 28px;
+}
+
+@keyframes BtnAnimationPopUP {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+.nav__btn {
+    transform: translateY(80px);
+    opacity: 0;
+    animation: BtnAnimationPopUP 0.5s ease-in-out forwards;
+}
+.nav__btn:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.nav__btn:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.nav__btn:last-child {
+    animation-delay: 0.4s;
 }
