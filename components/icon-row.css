@@ -1,6 +1,7 @@
 .icon-row {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space;
     border-bottom: var(--main-border);
     padding-bottom: 20px;
 }
@@ -8,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px 15px;
 }
 .icon-row i {
     font-size: 35px;
