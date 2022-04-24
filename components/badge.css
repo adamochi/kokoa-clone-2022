@@ -1,0 +1,24 @@
+.badge {
+    background-color: orangered;
+    width: 26px;
+    height: 26px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+.cog__notification {
+    background-color: orangered;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    right: -2px;
+    bottom: 18px;
+}
+.fa-exclamation-circle {
+    color: orangered;
+    opacity: 0.5;
+}
