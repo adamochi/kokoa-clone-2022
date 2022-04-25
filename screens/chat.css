@@ -73,7 +73,7 @@
     margin-left: 7px;
     font-weight: 550;
     border-top-left-radius: 0px;
-    /* ^^^^^This is how to set individual border radius!^^^^^ */
+    /* ^^^^^This is how to set an individual border radius!^^^^^ */
 
 }
 .message__info {
@@ -107,23 +107,25 @@
     padding: 5px 25px;
     box-sizing: border-box;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
   }
-    .reply .reply__column:first-child {
+  .reply .reply__column:first-child {
     width: 10%;
   }
   .reply .reply__column:last-child {
     width: 90%;
     position: relative;
   }
-    .reply i {
+  .reply i {
     opacity: 0.5;
   }
-    .reply input {
+  .reply input {
     padding: 14px;
     width: 100%;
     border: var(--main-border);
     border-radius: 25px;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
   }
   .reply__column:last-child > i, .reply__column:last-child button {
     position: absolute;
@@ -167,10 +169,41 @@
       }
   }
 
-  .message-row--own {
+.message-row--own {
       animation: slideInMessage 0.8s;
       animation-delay: 0.1s;
-  }
+}
 .message-row--left {
   animation: slideInMessageLeft 0.8s;
+}
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-kiss-wink-heart,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply input:focus {
+  width: 90vw;
+  transform: translateX(-13%) translateY(-80px);
+}
+.reply:focus-within {
+  transform: translateY(80px);
+}
+.reply__column .fa-kiss-wink-heart:hover {
+  transform: scale(120%);
+  transition: transform 0.3s;
+}
+.reply__column .fa-plus-square:hover {
+  will-change: transform;
+  transform: scale(120%);
+  transition: transform 0.3s;
+}
+.alt-header .fa-angle-left:hover {
+  will-change: transform;
+  transform: scale(130%);
+  transition: transform 0.1s;
 }
