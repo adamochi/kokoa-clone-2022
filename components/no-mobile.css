@@ -1,10 +1,4 @@
-@media screen and (max-width: 645px) {
-  #no-mobile {
-    display: none;
-  }
-}
-
-#no-mobile {
+#no-mobile, #portrait-mode {
     position: absolute;
     z-index: 99;
     height: 100vh;
@@ -15,4 +9,15 @@
     align-items: center;
     font-size: 32px;
     top: 0;
-  }  
+  }
+  
+  @media screen and (max-width: 645px) {
+    #no-mobile {
+      display: none;
+    }
+  }
+  @media screen and (orientation: portrait) {
+      #portrait-mode {
+          display: none;
+      }
+  }
