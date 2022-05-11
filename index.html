@@ -1,70 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Kokoa Clone</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
-        </div>
-        <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
     </div>
 
     <header class="welcome-header">
-        <h1 class="wecome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="wecome-header__text">
-            If you have a Kokoa Account, log in with your email or phone number.
-        </p>
+      <h1 class="wecome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="wecome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
     </header>
-<!-- action sends to another form, method can be 2 things: post sends to a server on the backend. 2 is get, it is insecure. should be only things you will see on the url. not usernames and passwords 
+    <!-- action sends to another form, method can be 2 things: post sends to a server on the backend. 2 is get, it is insecure. should be only things you will see on the url. not usernames and passwords 
 post methods won't work on the place we are going to upload, only get-->
     <form action="friends.html" method="" id="login-form">
-        <input name="username" type="text" placeholder="Email or Phone Number">
-        <input name="password" type="password" placeholder="Password">
-        <input type="submit" value="Log In">
-        <a href="#">Find kokoa Account or Password</a>
+      <input name="username" type="text" placeholder="Email or Phone Number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find kokoa Account or Password</a>
     </form>
 
     <div id="no-mobile">
-        <span>༼ つ ◕_◕ ༽つ Your screen is too big! ㅠㅠ</span>
+      <span>༼ つ ◕_◕ ༽つ Your screen is too big! ㅠㅠ</span>
     </div>
 
     <div id="portrait-mode">
-        <span>(╯°□°）╯︵ ┻━┻ Please rotate your screen!</span>
+      <span>(╯°□°）╯︵ ┻━┻ Please rotate your screen!</span>
     </div>
 
-
-
-
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- 
 
