@@ -1,12 +1,13 @@
 #chat-screen {
-    background-color: #a4c2d8;
-    height: 456vh;
+  background-color: #a4c2d8;
+  height: 456vh;
 }
 #chat-screen .alt-header {
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  width: 100%;
 }
-#chat-screen .alt-header, #chat-screen .status-bar {
+#chat-screen .alt-header,
+#chat-screen .status-bar {
   top: 0;
   position: fixed;
   width: 100%;
@@ -22,72 +23,71 @@
 }
 
 @keyframes fadeIn {
-    from {
-        transform: translateY(300%);
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-    
+  from {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .main-chat {
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    font-weight: 600;
-    align-items: center;
-    animation: fadeIn 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  font-weight: 600;
+  align-items: center;
+  animation: fadeIn 0.5s ease-out;
 }
 
 .chat__timestamp {
-    color: aliceblue;
-    background-color: #7e9fb6c7;
-    padding: 20px;
-    border-radius: 25px;
-    margin-bottom: 20px;
+  color: aliceblue;
+  background-color: #7e9fb6c7;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
 }
 .message-row {
-    width: 100%;
-    display: flex;
-    margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
 }
 .message-row img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
-.message__author, .message__time {
-    font-weight: 600;
-    font-size: 15px;
-    opacity: 0.8;
-    display: block;
-    margin-bottom: 10px;
-    margin-left: 5px;
+.message__author,
+.message__time {
+  font-weight: 600;
+  font-size: 15px;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 5px;
 }
 .message__bubble {
-    background-color: aliceblue;
-    padding: 15px;
-    border-radius: 17px;
-    margin-left: 7px;
-    font-weight: 550;
-    border-top-left-radius: 0px;
-    /* ^^^^^This is how to set an individual border radius!^^^^^ */
-
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 17px;
+  margin-left: 7px;
+  font-weight: 550;
+  border-top-left-radius: 0px;
+  /* ^^^^^This is how to set an individual border radius!^^^^^ */
 }
 .message__info {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 .message-row--own {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 .message__bubble--own {
-    border-top-right-radius: 0px;
-    border-top-left-radius: 17px;
-    background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 17px;
+  background-color: var(--yellow);
 }
 /* .message-row--own .message__bubble {
     order: 1;
@@ -95,83 +95,84 @@
 /* Can change the direction of flex children
      THIS ONLY WORKS ON FLEX CHILDREN --- message__info is a flex*/
 .message-row--own .message__info {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 .reply {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 25px;
-    box-sizing: border-box;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  .reply .reply__column:first-child {
-    width: 10%;
-  }
-  .reply .reply__column:last-child {
-    width: 90%;
-    position: relative;
-  }
-  .reply i {
-    opacity: 0.5;
-  }
-  .reply input {
-    padding: 14px;
-    width: 100%;
-    border: var(--main-border);
-    border-radius: 25px;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
-  }
-  .reply__column:last-child > i, .reply__column:last-child button {
-    position: absolute;
-    right: 1px;
-    top: 1px;
-  }
-  .reply__column:last-child > i {
-    right: 50px;
-    top: 15px;
-  }
-  .reply__column button {
-    background-color: var(--yellow);
-    border: none;
-    width: 43px;
-    height: 43px;
-    border-radius: 50%;
-  }
-  .reply__column button i {
-    opacity: 1;
-  }
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply input {
+  padding: 14px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+.reply__column:last-child > i {
+  right: 50px;
+  top: 15px;
+}
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
+.reply__column button i {
+  opacity: 1;
+}
 
-  .reply__column button:focus,
-  .reply__column button:active {
-    outline: none;
-  }
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
 
-  @keyframes slideInMessage { 
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: none;
-    }
+@keyframes slideInMessage {
+  from {
+    transform: translateX(100%);
   }
-  @keyframes slideInMessageLeft {
-      from {
-          transform: translate(-100%) ;
-                }
-      to {
-          transform: none;
-      }
+  to {
+    transform: none;
   }
+}
+@keyframes slideInMessageLeft {
+  from {
+    transform: translate(-100%);
+  }
+  to {
+    transform: none;
+  }
+}
 
 .message-row--own {
-      animation: slideInMessage 0.8s;
-      animation-delay: 0.1s;
+  animation: slideInMessage 0.8s;
+  animation-delay: 0.1s;
 }
 .message-row--left {
   animation: slideInMessageLeft 0.8s;
